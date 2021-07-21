@@ -1,0 +1,41 @@
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>saalihah_xx!</title>
+    <style>
+        #a{
+            height: 150px;
+            width: 200px;
+            background-color: cadetblue;
+        }
+        div{
+             background-color: darkcyan;
+             font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.industrytap.com/wp-content/uploads/2016/02/incandescent-e1456179151174.jpg" height="380px" width="300px" id="bulb"> <br><br>
+    <button onclick="turnOn()">ON</button>
+    <button onclick="turnOff()">OFF</button>
+    <br>
+    <br>
+    <br>
+    <div id="a" onmouseover="color1()" onmouseout="color2()"></div>
+    <script>
+          function turnOn(){
+                document.getElementById("bulb").src = "https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg"
+          }
+          function turnOff(){
+                document.getElementById("bulb").src = "https://www.industrytap.com/wp-content/uploads/2016/02/incandescent-e1456179151174.jpg"
+          }
+          function color1(){
+              document.getElementById("a").style.background = "pink"
+          }
+          function color2(){
+              document.getElementById("a").style.background = "cadetblue"
+          }
+    </script>
+</body>
+</html>
